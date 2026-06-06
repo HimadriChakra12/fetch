@@ -16,7 +16,7 @@
 #include <X11/Xlib.h>
 #include <X11/Xatom.h>
 
-#include "paleofetch.h"
+#include "fetch.h"
 #include "config.h"
 
 #define BUF_SIZE 150
