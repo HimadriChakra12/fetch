@@ -13,6 +13,8 @@ Note: this testing occured on only 1 computer, it's not a good representation on
 
 # HIMCHECK
 1. **Fallback** -> [30ce51b](https://github.com/ss7m/paleofetch/commit/30ce51ba025baff4e39f93d0f264f4eb6278103b)
+2. **Simple GPU** -> [4cfa7b9](https://github.com/ss7m/paleofetch/commit/4cfa7b9c96f68878a058b09548d83352ed49692b)
+3. **PR** -> [dwzg](https://github.com/ss7m/paleofetch/compare/master...dwzg:paleofetch:master)
 
 Example output:
 
