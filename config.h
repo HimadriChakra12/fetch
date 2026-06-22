@@ -15,29 +15,29 @@
 #define LOGOCOLOR CYAN
 #define TITLECOLOR BLUE
 
+#define f false
+#define t true
+
 #define CONFIG \
 { \
    /* name            function                 cached */\
     SPACER \
-    { "",             get_title,               false }, \
-    { "",             get_bar,                 false }, \
-    { "OS: ",         get_os,                  true  }, \
-    { "Host: ",       get_host,                true  }, \
-    { "Kernel: ",     get_kernel,              true  }, \
-    { "Uptime: ",     get_uptime,              false }, \
-    { "Battery: ",    get_battery_percentage,  false }, \
+    { "   ",                   get_title,               f }, \
+    { "   ",                   get_bar,                 f }, \
+    { "   OS        : ",       get_os,                  t }, \
+    { "   Host      : ",       get_host,                t }, \
+    { "   Kernel    : ",       get_kernel,              t }, \
+    { "   Uptime    : ",       get_uptime,              f }, \
+    { "   Batt      : ",       get_battery_percentage,  f }, \
     SPACER \
-    { "Packages: ",   get_packages_pacman,   false }, \
-    { "Shell: ",      get_shell,             false }, \
-    { "Resolution: ", get_resolution,        false }, \
-    { "Terminal: ",   get_terminal,          false }, \
+    { "   Pack      : ",       get_packages_pacman,     f }, \
+    { "   Shell     : ",       get_shell,               f }, \
+    { "   Res       : ",       get_resolution,          f }, \
+    { "   Term      : ",       get_terminal,            f }, \
     SPACER \
-    { "CPU: ",        get_cpu,                 true  }, \
-    { "GPU: ",        get_gpu1,                true }, \
-    { "Memory: ",     get_memory,              false }, \
-    SPACER \
-    { "",             get_colors1,             false }, \
-    { "",             get_colors2,             false }, \
+    { "   CPU       : ",       get_cpu,                 t }, \
+    { "   GPU       : ",       get_gpu1,                t }, \
+    { "   Memory    : ",       get_memory,              f }, \
 }
 
 #define CPU_CONFIG \
