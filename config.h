@@ -39,6 +39,9 @@
     { "   CPU       : ",       get_cpu,                 t }, \
     { "   GPU       : ",       get_gpu1,                t }, \
     { "   Memory    : ",       get_memory,              f }, \
+    SPACER \
+    { "   /         : ",       *get_disk_usage_root,             false }, \
+    { "   ~         : ",       *get_disk_usage_home,             false }, \
 }
 
 #define CPU_CONFIG \
