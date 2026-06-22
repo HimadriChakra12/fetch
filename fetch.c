@@ -1,4 +1,5 @@
 #pragma GCC diagnostic ignored "-Wunused-function"
+#include <sys/ioctl.h>
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -310,6 +311,7 @@ static char *get_shell() {
 
     return shell;
 }
+
 
 static char *get_resolution() {
     int screen, width, height;
@@ -763,3 +765,4 @@ int main(int argc, char *argv[]) {
     printf("\e[?7h");
     return 0;
 }
+
