@@ -23,11 +23,12 @@
    /* name            function                 cached */\
     SPACER \
     { "   ",                   get_title,               f }, \
-    { "   ",                   get_bar,                 f }, \
+    SPACER \
+    /* { "   ",                   get_bar,                 f }, */ \
     { "   OS        : ",       get_os,                  t }, \
     { "   Host      : ",       get_host,                t }, \
     { "   Kernel    : ",       get_kernel,              t }, \
-    { "   Uptime    : ",       get_uptime,              f }, \
+    { "   Up        : ",       get_uptime,              f }, \
     { "   Batt      : ",       get_battery_percentage,  f }, \
     SPACER \
     { "   Pack      : ",       get_packages_pacman,     f }, \
