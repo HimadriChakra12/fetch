@@ -697,6 +697,8 @@ int main(int argc, char *argv[]) {
     FILE *cache_file;
     int read_cache;
 
+    printf("\e[?7l");
+
     status = uname(&uname_info);
     halt_and_catch_fire("uname failed");
     status = sysinfo(&my_sysinfo);
@@ -758,6 +760,6 @@ int main(int argc, char *argv[]) {
     if(display != NULL) { 
         XCloseDisplay(display);
     }
-
+    printf("\e[?7h");
     return 0;
 }
